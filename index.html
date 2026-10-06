@@ -208,6 +208,10 @@ footer p{margin:.3rem 0;max-width:62ch}
     <div>
       <p class="kicker">Facultad de Ciencias Gastronómicas y Turismo</p>
       <h1>Planificación y ejecución de eventos gastronómicos</h1>
+      <button type="button" onclick="document.getElementById('bienvenidaAudio').play()" style="margin:12px 0 18px; padding:10px 16px; border:0; border-radius:999px; background:#287D25; color:white; font-weight:700; cursor:pointer;">
+🔊 Escuchar bienvenida
+</button>
+<audio id="bienvenidaAudio" src="Bienvenida-eventos.mp3" preload="metadata"></audio>
       <ul class="facts" aria-label="Datos del curso">
         <li>Octavo A</li>
         <li>Octubre 2026 a febrero 2027</li>
@@ -614,11 +618,5 @@ footer p{margin:.3rem 0;max-width:62ch}
   });
 })();
 </script>
-  <div style="position:fixed; bottom:20px; right:20px; z-index:9999;">
-  <audio controls preload="metadata">
-    <source src="Bienvenida-eventos.mp3" type="audio/mpeg">
-    Tu navegador no permite reproducir el audio.
-  </audio>
-</div>
-  </body>
+    </body>
 </html>
