@@ -614,9 +614,11 @@ footer p{margin:.3rem 0;max-width:62ch}
   });
 })();
 </script>
-  <audio id="bienvenidaAudio" src="Bienvenida-eventos.mp3" preload="auto"></audio>
-<script>
-document.addEventListener("click", function(){ document.getElementById("bienvenidaAudio").play(); }, {once:true});
-</script>
-</body>
+  <div style="position:fixed; bottom:20px; right:20px; z-index:9999;">
+  <audio controls preload="metadata">
+    <source src="Bienvenida-eventos.mp3" type="audio/mpeg">
+    Tu navegador no permite reproducir el audio.
+  </audio>
+</div>
+  </body>
 </html>
